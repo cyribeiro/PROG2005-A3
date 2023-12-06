@@ -5,6 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { Tab2Page } from './tab2.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
+import { Property, PropertyType, ListingType } from '../property';
+import { Injectable } from '@angular/core';
+import { PropertyService } from '../property.service';
+
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 
 @NgModule({

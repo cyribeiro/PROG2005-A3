@@ -13,5 +13,11 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div id="container">
+    <strong>Our properties</strong><br>
+    <ion-button colour="default" size="small" shape="round" fill="outline" (click)="displayProperties()">Show listings</ion-button>
+    <ul class="property-cards">
+      <li *ngFor="let property of arrProperties">ID:{{property.id}}<br>Name:{{property.name}}<br>Address: {{property.address}}<br>Type: {{property.type}}<br>Listing: {{property.listing}}<br>Bedrooms: {{property.bedrooms}}<br>Bathrooms: {{property.bathrooms}}<br>Parking: {{property.parking}}<br>Available: {{property.available}}<br>Agent Name: {{property.agentName}}<br>Agent email: {{property.agentEmail}}<br>Agent Phone: {{property.agentPhone}}<br>Exclusive listing: {{property.exclusive}}</li>
+    </ul>
+  </div>
 </ion-content>

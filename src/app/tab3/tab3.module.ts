@@ -7,6 +7,10 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab3PageRoutingModule } from './tab3-routing.module';
 
+import { Property, PropertyType, ListingType } from '../property';
+import { Injectable } from '@angular/core';
+import { PropertyService } from '../property.service';
+
 @NgModule({
   imports: [
     IonicModule,

@@ -13,5 +13,33 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+
+<div id="container">
+  <h2 class="title">Create new listing</h2>
+  <ion-input type="text" label="ID: " [(ngModel)]="prop_id_new"></ion-input>
+  <ion-input type="text" label="Property name: " [(ngModel)]="prop_name_new"></ion-input>
+  <ion-input type="text" label="Address: " value="" [(ngModel)]="prop_address_new"></ion-input>
+  Type: <select name="typeOption" id="typeOption" [(ngModel)]="prop_type_new">
+    <option value="house">House</option>
+    <option value="apartment">Apartment</option>
+  </select><br><br>
+  Listing: <select name="listingOption" id="listingOption" [(ngModel)]="prop_listing_new">
+    <option value="rent">For Rent</option>
+    <option value="sale">For Sale</option>
+  </select>
+  <ion-input type="text" label="Bedrooms: " value="" [(ngModel)]="prop_bedrooms_new"></ion-input>
+  <ion-input type="text" label="Bathrooms: " value="" [(ngModel)]="prop_bathrooms_new"></ion-input>
+  <ion-input type="text" label="Parking: " value="" [(ngModel)]="prop_parking_new"></ion-input>
+  <ion-input type="text" label="Price: " value="" [(ngModel)]="prop_price_new"></ion-input>
+  <ion-input type="date" label="Date available: " id="available" name="available" [(ngModel)]="prop_available_new"></ion-input>
+  <ion-input type="text" label="Agent: " value="" [(ngModel)]="prop_agentName_new"></ion-input>
+  <ion-input type="text" label="Email: " value="" [(ngModel)]="prop_agentEmail_new"></ion-input>
+  <ion-input type="text" label="Phone: " value="" [(ngModel)]="prop_agentPhone_new"></ion-input>
+  Exclusive: <select name="exclusive" id="exclusive" [(ngModel)]="prop_exclusive_new">
+    <option value="True">True</option>
+    <option value="False">False</option>
+  </select><br><br>
+  <ion-button colour="default" size="small" shape="round" fill="outline" (click)="addProperty()">Add listing</ion-button>
+</div>
+
 </ion-content>
